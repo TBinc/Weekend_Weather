@@ -1,0 +1,4 @@
+Markdown<=3.2
+requests
+md_mermaid
+pytest

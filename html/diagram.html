@@ -5,7 +5,7 @@ sequenceDiagram
 participant U as User
 participant S as System
 participant O as OpenWeather API
-U->>S: ZIP 32216 | aggregated
+U->>S: ZIP 32202 | aggregated
 S->>O: Request weather data
 O-->>S: Return weather data
 S->>S: Clean API response
@@ -15,21 +15,21 @@ S-->>U: Display weather prediction
 <h2>Output Example:</h2>
 <p>Date: 2023-07-22</p>
 <p>Time: 11:00:00</p>
-<p>Temperature: 85.26 F</p>
-<p>Feels Like: 93.31 F</p>
-<p>Min Temperature: 85.26 F</p>
-<p>Max Temperature: 93.47 F</p>
+<p>Temperature: 88.41 F</p>
+<p>Feels Like: 100.20 F</p>
+<p>Min Temperature: 88.41 F</p>
+<p>Max Temperature: 93.33 F</p>
 <p>Pressure: 1014 hPa</p>
-<p>Humidity: 70%</p>
+<p>Humidity: 68%</p>
 <hr />
 <p>Date: 2023-07-23</p>
 <p>Time: 02:00:00</p>
-<p>Temperature: 78.13 F</p>
-<p>Feels Like: 79.32 F</p>
-<p>Min Temperature: 78.13 F</p>
-<p>Max Temperature: 78.13 F</p>
+<p>Temperature: 77.88 F</p>
+<p>Feels Like: 79.09 F</p>
+<p>Min Temperature: 77.88 F</p>
+<p>Max Temperature: 77.88 F</p>
 <p>Pressure: 1013 hPa</p>
-<p>Humidity: 78%</p>
+<p>Humidity: 79%</p>
 <hr />
 <hr />
 <script src="mermaid.min.js">mermaid.initialize({startOnLoad:true});</script>

@@ -44,6 +44,9 @@ _____
     html = markdown.markdown(diagram_definition, extensions=['md_mermaid']).replace("<script>",
                                                                                     '<script src="mermaid.min.js">')
 
+    # Create folders if they don't exist
+    os.makedirs(path, exist_ok=True)
+
     # Write the generated HTML to a file
     with open(os.path.join(path, 'diagram.html'), 'w') as f:
         f.write(html)
