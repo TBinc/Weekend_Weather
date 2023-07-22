@@ -1,6 +1,6 @@
 from typing import Optional, Union
 from weather_api import get_dummy_data, get_printable_forecast, get_weather_data
-from diagram.utils import create_diagram
+from diagram.utils import _create_diagram
 
 
 def empty_diagram(path: str = './') -> None:
@@ -10,7 +10,7 @@ def empty_diagram(path: str = './') -> None:
     Args:
         path (str, optional): Path where the diagram is to be saved. Defaults to './'.
     """
-    create_diagram(path=path)
+    _create_diagram(path=path)
 
 
 def filled_diagram(zip_code: Union[str, int], aggregated: bool = False, data: Optional[dict] = None,
@@ -32,4 +32,4 @@ def filled_diagram(zip_code: Union[str, int], aggregated: bool = False, data: Op
     res = get_printable_forecast(data, aggregated=aggregated, sample=True)
 
     # Create diagram with the printable forecast
-    create_diagram(zip_code=zip_code, aggregated=aggregated, data_ex=res, path=path)
+    _create_diagram(zip_code=zip_code, aggregated=aggregated, data_ex=res, path=path)

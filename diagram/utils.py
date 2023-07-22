@@ -3,8 +3,8 @@ import os
 from typing import Optional
 
 
-def create_diagram(zip_code: Optional[str] = None, aggregated: Optional[bool] = None,
-                   data_ex: Optional[str] = None, path: str = 'diagram.html') -> None:
+def _create_diagram(zip_code: Optional[str] = None, aggregated: Optional[bool] = None,
+                    data_ex: Optional[str] = None, path: str = 'diagram.html') -> None:
     """
     Function to create an HTML diagram depicting the interaction between User, System, and OpenWeather API.
 
