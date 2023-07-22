@@ -12,7 +12,7 @@ def test_empty_diagram(path):
 @pytest.mark.parametrize("aggregated", [True, False])
 @mock.patch("diagram.diagram.get_weather_data")
 @mock.patch("diagram.diagram.get_printable_forecast")
-@mock.patch("diagram.diagram.create_diagram")
+@mock.patch("diagram.diagram._create_diagram")
 def test_filled_diagram(mock_create_diagram, mock_get_printable_forecast, mock_get_weather_data, aggregated):
     zip_code = "32216"
     data = {"data": "test_data"}
