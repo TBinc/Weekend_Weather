@@ -74,7 +74,7 @@ Note: The API key is not stored in the script or any file. It is kept in the env
 
 If the weather data for the next weekend is not available (e.g., the script is run on a Monday), the tool will use stored dummy data to show the workings. This is to ensure that the flowchart diagram can be generated even when fresh weather data is not available.
 
-The coverage results are in the folder `coverrage_results`. The HTML report can be opened from the shortcut on the root folder.
+The coverage results are in the folder `coverrage_results/a_report.html`.
 
 ## Execution diagram
 
