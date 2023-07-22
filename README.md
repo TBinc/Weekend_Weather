@@ -9,6 +9,7 @@ The project has the following structure:
     weather_weekend
     │   main.py
     │   requirements.txt
+    ├── coverage_report
     ├── html
     │   │   mermaid.min.js
     │   │   (Empty directory where the generated diagrams will be saved)
@@ -72,6 +73,8 @@ Note: The API key is not stored in the script or any file. It is kept in the env
 ## Note
 
 If the weather data for the next weekend is not available (e.g., the script is run on a Monday), the tool will use stored dummy data to show the workings. This is to ensure that the flowchart diagram can be generated even when fresh weather data is not available.
+
+The coverage results are in the folder `coverrage_results`. The HTML report can be opened from the shortcut on the root folder.
 
 ## Execution diagram
 
