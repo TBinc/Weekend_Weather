@@ -5,10 +5,6 @@ import pytest
 
 from main import main
 
-import os
-
-os.environ['OPENWEATHER_API_KEY'] = '795942ee82638d94515ea737ff88feb6'
-
 
 @pytest.mark.parametrize("args", [
     ["--zip", "32216", "--forecast"],
